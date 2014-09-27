@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <PreferenceCategory
+        android:title="@string/pref_generalsettings"
+        android:layout="@layout/preference_category" />
+    
+    <CheckBoxPreference
+        android:key="autorun"
+        android:title="@string/pref_boot"
+        android:summary="@string/pref_boot_desc"
+        android:icon="@drawable/pref_autorun"
+        android:layout="@layout/preference_holo"
+        android:defaultValue="true" />
+    
+    <ListPreference 
+        android:key="viewstyle"
+        android:title="@string/pref_viewstyle"
+        android:summary="@string/pref_viewstyle_desc"
+        android:icon="@drawable/pref_viewstyle"
+        android:capitalize="words"
+        android:defaultValue="VIEWSTYLE_FLOATING"
+        android:dialogTitle="@string/pref_viewstyle"
+        android:layout="@layout/preference_holo"
+        android:entries="@array/viewstylemode"
+        android:entryValues="@array/viewstylemode_alias"/>
+    
+    <PreferenceCategory
+        android:title="@string/pref_othersettings" />
+    
+    <Preference android:icon="@drawable/pref_searchsettings" 
+        android:title="@string/pref_searchsettings" 
+        android:layout="@layout/preference_holo"
+        android:key="searchsettings" />
+
+    <Preference android:icon="@drawable/pref_tabsettings" 
+        android:title="@string/pref_tabsettings" 
+        android:layout="@layout/preference_holo"
+        android:key="tabsettings" />
+    
+    <Preference android:icon="@drawable/pref_mapsettings" 
+        android:title="@string/pref_mapsettings" 
+        android:layout="@layout/preference_holo"
+        android:key="mapsettings" />
+
+</PreferenceScreen>

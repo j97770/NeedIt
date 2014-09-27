@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:key="tabgoogle"
+        android:title="@string/pref_show_google"
+        android:summary="@string/pref_show_google_desc"
+        android:layout="@layout/preference_holo"
+        android:defaultValue="true"
+        android:enabled="false" />
+    
+    <CheckBoxPreference
+        android:key="tabnaver"
+        android:title="@string/pref_show_naver"
+        android:layout="@layout/preference_holo"
+        android:defaultValue="true" />
+    
+    <CheckBoxPreference
+        android:key="tabdaum"
+        android:title="@string/pref_show_daum"
+        android:layout="@layout/preference_holo"
+        android:defaultValue="true" />
+    
+    <CheckBoxPreference
+        android:key="tabyoutube"
+        android:title="@string/pref_show_youtube"
+        android:layout="@layout/preference_holo"
+        android:defaultValue="true" />
+    
+    <CheckBoxPreference
+        android:key="tabwikipedia"
+        android:title="@string/pref_show_wikipedia"
+        android:layout="@layout/preference_holo"
+        android:defaultValue="true" />
+    
+    <CheckBoxPreference
+        android:key="tablocal"
+        android:title="@string/pref_show_local"
+        android:layout="@layout/preference_holo"
+        android:defaultValue="true" />
+</PreferenceScreen>

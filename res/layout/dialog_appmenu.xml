@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/app_menu"
+    android:layout_width="match_parent"
+    android:layout_height="320dip"
+    android:orientation="vertical" 
+    android:background="#f2f2f2"
+    android:visibility="gone">
+
+    <GridView
+        android:id="@+id/all_apps"
+        android:layout_width="match_parent"
+        android:layout_height="320dip"
+        android:layout_gravity="center"
+        android:alwaysDrawnWithCache="true"
+        android:columnWidth="78dip"
+        android:gravity="top|center"
+        android:drawSelectorOnTop="false"
+        android:drawingCacheQuality="auto"
+        android:numColumns="5"
+        android:persistentDrawingCache="animation|scrolling"
+        android:scrollbars="none"
+        android:stackFromBottom="false"
+        android:stretchMode="columnWidth" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.25dip"
+        android:background="#40000000" />
+
+</LinearLayout>

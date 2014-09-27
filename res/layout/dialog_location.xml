@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.nhn.android.maps.NMapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="56dip"
+        android:layout_height="56dip"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_location" />
+
+    <TextView
+        android:id="@+id/myLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="28dip"
+        android:layout_marginRight="28dip"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="현재 위치를 불러오는 중 입니다"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffa4a4a4"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/menu_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dip"
+        android:layout_marginLeft="32dip"
+        android:layout_marginRight="32dip"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/showMapView"
+            android:layout_width="50dip"
+            android:layout_height="40dip"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/btn_location_menu_bg"
+            android:text="@string/show_map"
+            android:textColor="#636363"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/hideMapView"
+            android:layout_width="50dip"
+            android:layout_height="40dip"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/btn_location_menu_bg"
+            android:text="@string/hide_map"
+            android:textColor="#636363"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/searchNearby"
+            android:layout_width="50dip"
+            android:layout_height="40dip"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/btn_location_menu_bg"
+            android:text="주변 검색"
+            android:textColor="#636363"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

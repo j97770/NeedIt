@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_background"
+        android:fadeScrollbars="true"
+        android:scrollbarDefaultDelayBeforeFade="50"
+        android:scrollbarFadeDuration="50"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/tab_google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/tab_google" />
+
+            <ImageButton
+                android:id="@+id/tab_naver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/tab_naver" />
+
+            <ImageButton
+                android:id="@+id/tab_daum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/tab_daum" />
+
+            <ImageButton
+                android:id="@+id/tab_youtube"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/tab_youtube" />
+
+            <ImageButton
+                android:id="@+id/tab_wikipedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/tab_wikipedia" />
+
+            <ImageButton
+                android:id="@+id/tab_local"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/tab_local" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <FrameLayout
+        android:id="@+id/FrameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/search_google"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:hint="@string/google"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:paddingLeft="16dip"
+                    android:singleLine="true"
+                    android:textColor="#868686"
+                    android:textColorHint="#868686"
+                    android:textSize="20sp" >
+
+                    <requestFocus />
+                </EditText>
+
+                <ImageButton
+                    android:id="@+id/openweb_google"
+                    android:layout_width="50dip"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:src="@drawable/ic_action_openweb"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/imagesearch_google"
+                    android:layout_width="50dip"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:src="@drawable/ic_action_imagesearch" />
+
+                <ImageButton
+                    android:id="@+id/voicesearch_google"
+                    android:layout_width="50dip"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:src="@drawable/ic_action_microphone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.25dip"
+                android:background="#40000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/naver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2fb100"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/search_naver"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:hint="@string/naver"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:paddingLeft="16dip"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/openweb_naver"
+                android:layout_width="50dip"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:src="@drawable/ic_action_openweb_light"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/voicesearch_naver"
+                android:layout_width="50dip"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:src="@drawable/ic_action_microphone_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/daum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#618ffc"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/search_daum"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:hint="@string/daum"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:paddingLeft="16dip"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/openweb_daum"
+                android:layout_width="50dip"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:src="@drawable/ic_action_openweb_light"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/voicesearch_daum"
+                android:layout_width="50dip"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:src="@drawable/ic_action_microphone_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/youtube"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d6271d"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/search_youtube"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:hint="@string/youtube"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:paddingLeft="16dip"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/openweb_youtube"
+                android:layout_width="50dip"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:src="@drawable/ic_action_openweb_light"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/voicesearch_youtube"
+                android:layout_width="50dip"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:src="@drawable/ic_action_microphone_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wikipedia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/search_wikipedia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:hint="@string/wikipedia"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:paddingLeft="16dip"
+                    android:singleLine="true"
+                    android:textColor="#868686"
+                    android:textColorHint="#868686"
+                    android:textSize="20sp" >
+
+                    <requestFocus />
+                </EditText>
+
+                <ImageButton
+                    android:id="@+id/openweb_wikipedia"
+                    android:layout_width="50dip"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:src="@drawable/ic_action_openweb"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/voicesearch_wikipedia"
+                    android:layout_width="50dip"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:src="@drawable/ic_action_microphone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.25dip"
+                android:background="#40000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/local"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d9d9d9"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/search_local"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:hint="@string/local"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:paddingLeft="16dip"
+                android:singleLine="true"
+                android:textColor="#868686"
+                android:textColorHint="#868686"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/voicesearch_local"
+                android:layout_width="50dip"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:src="@drawable/ic_action_microphone" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <WebView
+            android:id="@+id/webview_searchResult"
+            android:layout_width="match_parent"
+            android:layout_height="320dip"
+            android:maxHeight="320dip"
+            android:minHeight="320dip"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/webview_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.25dip"
+            android:background="#40000000"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

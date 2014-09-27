@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string-array name="mapviewmode">
+        <item>@string/mapview_vector</item>
+        <item>@string/mapview_hybrid</item>
+    </string-array>
+    
+    <string-array name="mapviewmode_alias">
+        <item>VIEW_MODE_VECTOR</item>
+        <item>VIEW_MODE_HYBRID</item>
+    </string-array>
+    
+    <string-array name="viewstylemode">
+        <item>@string/viewstyle_floating</item>
+        <item>@string/viewstyle_notification</item>
+    </string-array>
+    
+    <string-array name="viewstylemode_alias">
+        <item>VIEWSTYLE_FLOATING</item>
+        <item>VIEWSTYLE_NOTIFICATION</item>
+    </string-array>
+
+</resources>

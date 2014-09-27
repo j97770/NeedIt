@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">니드잇</string>
+    <string name="action_settings">설정</string>
+    <string name="hello_world">환영합니다!</string>
+    <string name="title_activity_dialog">니드잇</string>
+    <string name="google">Google</string>
+    <string name="googleimage">Google 이미지</string>
+    <string name="naver">네이버</string>
+    <string name="daum">다음</string>
+    <string name="youtube">Youtube</string>
+    <string name="wikipedia">위키백과</string>
+    <string name="local">애플리케이션 메뉴</string>
+    <string name="show_map">지도 보이기</string>
+    <string name="hide_map">지도 숨기기</string>
+    <string name="search_nearby">주변 검색</string>
+    <string name="voice_search">검색할 단어를 말하세요.</string>
+    <string name="service_notification">탭하여 검색</string>
+    <string name="loading_location">현재 위치를 가져오는 중입니다...</string>
+    <string name="gpsdisabled">GPS가 꺼져있습니다. GPS를 켜시겠습니까?</string>
+    <string name="enablegps">GPS 켜기</string>
+    <string name="nothanks">켜지 않음</string>
+    <string name="exit_app">정말 니드잇을 종료하시겠습니까?</string>
+    <string name="exit">종료</string>
+    <string name="cancel">취소</string>
+    
+    <string name="action_advanced">이미지 검색 설정</string>
+    <string name="action_share">공유</string>
+    <string name="query_hint">Pictures of</string>
+    <string name="search">Search</string>
+    <string name="title_activity_advanced">이미지 검색 고급 설정</string>
+    <string name="image_size">이미지 크기</string>
+    <string name="color_filter">컬러 필터</string>
+    <string name="image_type">이미지 유형</string>
+    <string name="site_filter">사이트 필터</string>
+    <string name="site_filter_hint">도메인 입력</string>
+    <string name="save_settings">저장</string>
+    <string name="reset_settings">초기화</string>
+    <string name="title_activity_image">이미지</string>
+    <string name="load_more">더 불러오기</string>
+    <string name="share">이미지를 공유</string>
+    <string name="title_activity_free">죄송합니다!</string>
+    <string name="sorry">죄송합니다. \n이 기능은 니드잇 프로 버전에서만 지원됩니다. \n더욱 더 많은 기능을 원하시면 니드잇 프로를 구매하세요!</string>
+    <string name="proversion"><b>프로버전 기능 : </b>\n<li>다양한 설정들</li>\n<li>Google 이미지 검색</li></string>
+    <string name="getpro">구매하기</string>
+    <string name="gpsoff">GPS가 꺼져있음</string>
+    <string name="on_float">니드잇 켜기</string>
+    
+    <!-- Tutorial -->
+    <string name="title_activity_tutorial">튜토리얼</string>
+    <string name="tutorial_run">니드잇 실행하기</string>
+    <string name="tutorial_run_desc">화면상에 떠다니는 니드잇 아이콘을 클릭하면 검색창이 나타납니다. \n이 아이콘은 당신이 원하는 곳으로 드래그 하여 위치를 옮길 수 있습니다.</string>
+    <string name="tutorial_menu">메뉴 열기</string>
+    <string name="tutorial_menu_desc">검색창의 우측 상단의 니드잇 아이콘을 길게 누르면 메뉴가 나타납니다. \n이 메뉴에선 니드잇 설정으로 이동하거나 니드잇을 종료할 수 있습니다.</string>
+    <string name="tutorial_googleimage">Google 이미지 검색</string>
+    <string name="tutorial_googleimage_desc">Google은 이미지 검색을 지원합니다. \nGoogle 탭에서 이미지 버튼을 클릭 후 검색할 단어를 입력하면, \n니드잇이 결과에 맞는 이미지를 찾아줍니다.</string>
+    
+    
+    <!-- Preference -->
+    <string name="pref_settings">니드잇 설정</string>
+    <string name="pref_generalsettings">기본 설정</string>
+    <string name="pref_othersettings">다른 설정</string>
+    <string name="pref_tabsettings">탭 설정</string>
+    <string name="pref_mapsettings">지도 설정</string>
+    <string name="pref_googleimage">Google 이미지 검색</string>
+    <string name="pref_show_google">Google</string>
+    <string name="pref_show_google_desc">Google은 탭에서 숨길 수 없습니다.</string>
+    <string name="pref_show_naver">네이버</string>
+    <string name="pref_show_daum">다음</string>
+    <string name="pref_show_youtube">Youtube</string>
+    <string name="pref_show_wikipedia">위키백과</string>
+    <string name="pref_show_local">휴대폰 내부 검색</string>
+    <string name="pref_searchsettings">검색 설정</string>
+    <string name="pref_hide_zoom">확대 버튼 숨김</string>
+    <string name="pref_hide_zoom_desc">검색결과에서 확대버튼을 숨깁니다.</string>
+    <string name="pref_boot">자동 실행</string>
+    <string name="pref_boot_desc">휴대폰의 전원이 켜지면 앱을 자동으로 실행합니다.</string>
+    <string name="pref_mapview_mode">지도 유형</string>
+    <string name="mapview_vector">일반 지도</string>
+    <string name="mapview_hybrid">위성 지도</string>
+    <string name="restart">니드잇 재시작</string>
+    <string name="viewstyle_floating">플로팅 아이콘</string>
+    <string name="viewstyle_notification">진행 중 알림</string>
+    <string name="pref_show_country">나라 이름 표시</string>
+    <string name="pref_show_country_desc">현재 위치에 국가명을 표시합니다.</string>
+    <string name="pref_viewstyle">뷰 스타일</string>
+    <string name="pref_viewstyle_desc">니드잇 뷰의 스타일을 변경할 수 있습니다.</string>
+    <string name="toast_viewstyle">해당 옵션은 앱이 재시작되면 적용됩니다.</string>
+    
+
+</resources>

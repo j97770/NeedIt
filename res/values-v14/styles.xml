@@ -1,0 +1,52 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+    </style>
+
+    <style name="DialogTheme" parent="@android:style/Theme.Holo.Light.Dialog.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="NeedIt.Preference.Dialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+    </style>
+
+    <style name="NeedIt.Preference" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:preferenceStyle">@style/NeedIt.Preference.Holo</item>
+        <item name="android:preferenceScreenStyle">@style/NeedIt.Preference.Holo</item>
+        <item name="android:preferenceCategoryStyle">@style/NeedIt.Preference.Category</item>
+        <item name="android:preferenceInformationStyle">@style/NeedIt.Preference.Holo</item>
+        
+    </style>
+
+    <style name="ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:titleTextStyle">@style/ActionBarTitle</item>
+        <item name="android:background">@drawable/actionbar_background</item>
+    </style>
+
+    <style name="ActionBarTitle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:textColor">#6d6d6d</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="NeedIt.Preference.Category">
+        <item name="android:layout">@layout/preference_category</item>
+        <item name="android:shouldDisableView">false</item>
+        <item name="android:selectable">false</item>
+        <item name="android:paddingStart">0dip</item>
+        <item name="android:paddingEnd">0dip</item>
+    </style>
+
+    <style name="NeedIt.Preference.Holo">
+        <item name="android:layout">@layout/preference_holo</item>
+    </style>
+
+</resources>

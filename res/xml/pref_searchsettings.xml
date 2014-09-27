@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:key="hidezoom"
+        android:title="@string/pref_hide_zoom"
+        android:summary="@string/pref_hide_zoom_desc"
+        android:layout="@layout/preference_holo"
+        android:defaultValue="false" />
+    
+    <Preference
+        android:title="@string/pref_googleimage" 
+        android:layout="@layout/preference_holo"
+        android:key="googleimage" />
+
+</PreferenceScreen>

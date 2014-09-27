@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.miru.needit"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.miru.needit.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.miru.needit.DialogActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="locked"
+            android:theme="@style/DialogTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.miru.needit.SettingsActivity"
+            android:label="@string/pref_settings"
+            android:theme="@style/NeedIt.Preference" >
+        </activity>
+        <activity
+            android:name="com.miru.needit.TabSettingsActivity"
+            android:label="@string/pref_tabsettings"
+            android:theme="@style/NeedIt.Preference.Dialog" >
+        </activity>
+        <activity
+            android:name="com.miru.needit.MapSettingsActivity"
+            android:label="@string/pref_mapsettings"
+            android:theme="@style/NeedIt.Preference" >
+        </activity>
+        <activity
+            android:name="com.miru.needit.SearchSettingsActivity"
+            android:label="@string/pref_searchsettings"
+            android:theme="@style/NeedIt.Preference" >
+        </activity>
+        <activity
+            android:name="com.miru.needit.AdvancedActivity"
+            android:label="@string/title_activity_advanced"
+            android:theme="@style/NeedIt.Preference" >
+        </activity>
+        <activity
+            android:name="com.miru.needit.ImageActivity"
+            android:label="@string/title_activity_image"
+            android:theme="@style/DialogTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.miru.needit.FloatingViewService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.miru.needit.NotificationService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.miru.needit.BootReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.miru.needit.TutorialActivity"
+            android:label="@string/title_activity_tutorial"
+            android:theme="@style/NeedIt.Preference" >
+        </activity>
+    </application>
+
+</manifest>

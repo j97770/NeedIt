@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+        android:capitalize="words"
+        android:defaultValue="@string/mapview_vector"
+        android:dialogTitle="@string/pref_mapview_mode"
+        android:layout="@layout/preference_holo"
+        android:entries="@array/mapviewmode"
+        android:entryValues="@array/mapviewmode_alias"
+        android:summary="@string/mapview_vector"
+        android:key="mapviewmode"
+        android:title="@string/pref_mapview_mode" />
+    
+    <CheckBoxPreference
+        android:key="showcountry"
+        android:title="@string/pref_show_country"
+        android:layout="@layout/preference_holo"
+        android:summary="@string/pref_show_country_desc"
+        android:defaultValue="true" />
+
+</PreferenceScreen>
